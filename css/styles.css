@@ -1,0 +1,48 @@
+/* styles.css */
+:root {
+    --color-primary: #ede627; /* Amarillo brillante */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .navbar {
+    background-color: var(--color-primary);
+  }
+  
+  .navbar a {
+    color: white;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #ede627;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .container {
+    padding-top: 30px;
+  }
+
+  .iconSocial svg {
+    width: 24px; /* Ajusta el tamaño según necesites */
+    height: 24px;
+    margin: 0 10px; /* Espaciado entre iconos */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .iconSocial svg:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el mouse */
+  }

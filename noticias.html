@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Ejemplo - Noticias</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .navbar-nav .nav-link {
+        transition: background-color 0.3s, transform 0.3s;
+        border-radius: 10px;
+    }
+    .navbar-nav .nav-link:hover {
+        background-color: #f39c12;
+        transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+        .navbar-nav .nav-link {
+            font-size: 18px;
+            padding: 10px;
+        }
+    }
+    .news-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .news-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .news-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+    .news-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .news-card h3 {
+        color: #333;
+        font-size: 20px;
+        margin: 15px;
+    }
+    .news-card p {
+        color: #555;
+        font-size: 14px;
+        margin: 0 15px 15px 15px;
+    }
+    .news-card .btn2 {
+        display: inline-block;
+        background-color: #ede627;
+        color: #000;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 15px 15px 15px;
+        border-radius: 5px;
+        font-size: 14px;
+        transition: background-color 0.3s;
+    }
+    .news-card .btn2:hover {
+        background-color: #f39c12;
+        color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ede627;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo_sin_fondo3.png" alt="Fundación_logo" style="width: 50px; height: auto;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="noticias.html">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido de la Página de Noticias -->
+  <section class="container news-section mb-5">  
+    <h1 class="text-center">Últimas Noticias</h1>
+    <div class="news-cards">
+      <!-- Noticia 1 -->
+      <div class="news-card">
+        <img src="images/estim_temprana.jpg" alt="Curso de Estimulación Temprana">
+        <h3>Curso de Estimulación Temprana</h3>
+        <p>Aprende técnicas esenciales para promover el desarrollo físico, emocional y cognitivo en niños pequeños. Una gran oportunidad para padres y cuidadores.</p>
+        <a href="contacto.html" class="btn2">Más información</a>
+      </div>
+
+      <!-- Noticia 2 -->
+      <div class="news-card">
+        <img src="images/estim_cognitiva.jpg" alt="Curso de Estimulación Cognitiva">
+        <h3>Curso de Estimulación Cognitiva</h3>
+        <p>Descubre herramientas y actividades para fortalecer habilidades cognitivas como la memoria, atención y resolución de problemas. Ideal para profesionales en educación y terapia.</p>
+        <a href="contacto.html" class="btn2">Más información</a>
+      </div>
+
+      <!-- Noticia 3 -->
+      <div class="news-card">
+        <img src="images/cognitivo_conductal.jpg" alt="Curso de Terapias Cognitivo - Conductal">
+        <h3>Curso de Terapias de Rehabilitación</h3>
+        <p>Conoce las últimas metodologías en terapias físicas y ocupacionales diseñadas para mejorar la calidad de vida de personas con discapacidades.</p>
+        <a href="contacto.html" class="btn2">Más información</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="text-center py-3" style="background-color: #333; color: #fff;">
+    <p>&copy; 2025 Fundación Andamiaje. Todos los derechos reservados.</p>
+    <nav id="navFooter" class="iconSocial">
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+    </nav>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

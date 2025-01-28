@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación - Cursos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .navbar-nav .nav-link {
+        transition: background-color 0.3s, transform 0.3s;
+        border-radius: 10px;
+    }
+    .navbar-nav .nav-link:hover {
+        background-color: #f39c12;
+        transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+        .navbar-nav .nav-link {
+            font-size: 18px;
+            padding: 10px;
+        }
+    }
+    .highlight-message {
+        background-color: #fff3cd;
+        color: #856404;
+        padding: 15px;
+        border: 1px solid #ffeeba;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .moodle-login {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo_sin_fondo3.png" alt="Fundación_logo" style="width: 50px; height: auto;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="cursos.html">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mensaje destacado -->
+  <section class="container my-5">
+    <div class="highlight-message">
+      <h3>¡Próximamente!</h3>
+      <p>Estaremos lanzando cursos de capacitación para que puedas adquirir nuevas habilidades y conocimientos. ¡Mantente atento a las actualizaciones!</p>
+    </div>
+  </section>
+
+  <!-- Conexión con Moodle -->
+  <section class="container my-5">
+    <h2 class="text-center">Acceso a Moodle</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="moodle-login">
+          <h5 class="text-center mb-3">Inicia sesión para acceder a los cursos</h5>
+          <form action="https://tu-url-moodle/login/index.php" method="post">
+            <div class="mb-3">
+              <label for="username" class="form-label">Usuario</label>
+              <input type="text" class="form-control" id="username" name="username" placeholder="Tu usuario">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Tu contraseña">
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary text-dark" style="background-color: #ede627; border: none;">Iniciar sesión</button>              
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="text-center py-3" style="background-color: #333; color: #fff;">
+    <p>&copy; 2025 Fundación Andamiaje. Todos los derechos reservados.</p>
+    <nav id="navFooter" class="iconSocial">
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+    </nav>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
